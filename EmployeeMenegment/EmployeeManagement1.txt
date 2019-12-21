@@ -1,0 +1,43 @@
+
+package employeemanagement;
+
+public class EmployeeManagement {
+
+    public static void main(String[] args) {
+        System.out.println("for reference one:");
+        Employee emp1=new Employee();
+        //emp1.Id="5";
+        emp1.setValue("101", "AKA", 100000);
+        double rec = emp1.yearlySalary();
+        System.out.println("y s is: "+rec);
+        emp1.display();
+        
+        System.out.println("for reference two:");
+        Employee emp2=new Employee();
+        //emp1.Id="5";
+        emp2.setValue("102", "AKA2", 200000);
+        emp2.display();
+        
+    }
+    
+}
+
+//for reference one:
+//before assign
+//i is: 101
+//n is: AKA
+//s is: 100000.0
+//after assign
+//id is: 101
+//name is: AKA
+//salary is: 100000.0
+//for reference two:
+//before assign
+//i is: 102
+//n is: AKA2
+//s is: 200000.0
+//after assign
+//id is: 102
+//name is: AKA2
+//salary is: 200000.0
+
